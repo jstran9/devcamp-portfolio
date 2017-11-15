@@ -1,6 +1,6 @@
 ## DevcampPortfolio ##
 - Creating this repository to follow along the contents of Jordan Hudgen's course, Professional-rails-5-development-course
-on Udemy
+on Udemy.
     - The course is here, https://www.udemy.com/professional-rails-5-development-course/
 
 * Ruby version
