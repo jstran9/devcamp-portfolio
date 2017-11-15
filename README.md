@@ -10,9 +10,10 @@ on Udemy
     - I am running Ubuntu 16.04 LTS 64-bit.
 
 * Database creation
+    - This Rails app uses the rails db:create command to generate both a development and test PostgreSQL database.
 
 * Database initialization
-    - This Rails app uses the rails db:create command to generate both a development and test PostgreSQL database.
+    - Data initialized will have to be done via the db/seeds.rb file. At this point data has not been bootstrapped yet.
 
 * How to run the test suite
     - Although not ideal, this course does not focus on using tests and used the -T flag to ignore creating tests.
