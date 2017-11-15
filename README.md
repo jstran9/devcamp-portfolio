@@ -18,9 +18,7 @@ end
 ```
 
 ```javascript
-def my_great_method
-  puts "here it is"
-end
+    alert('Hi there');
 ```
 
 <!--- Old README contents will be removed from being displayed.
