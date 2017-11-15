@@ -14,3 +14,6 @@
 
 # ignore rubymine specific IDE...
 .idea
+
+# I don't want to show my secrets
+/config/secrets.yml
