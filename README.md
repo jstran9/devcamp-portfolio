@@ -1,4 +1,27 @@
 ## DevcampPortfolio ##
+
+> This is a Ruby on Rails 5 application that allows users to create their own portfolios.
+
+### Features
+
+- Real time chat engine for comments
+- Blog
+- Portfolio
+- Drag and drop interface
+
+### Code Example
+
+```ruby
+def my_great_method
+  puts "here it is"
+end
+```
+
+```javascript
+    alert('Hi there');
+```
+
+<!--- Old README contents will be removed from being displayed.
 - Creating this repository to follow along the contents of Jordan Hudgen's course, Professional-rails-5-development-course
 on Udemy.
     - The course is here, https://www.udemy.com/professional-rails-5-development-course/
@@ -23,4 +46,4 @@ on Udemy.
 
 * Deployment instructions
     - Later on this will be deployed to Heroku, for now this repo does not deploy to a remote web server.
-
+--->
