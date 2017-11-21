@@ -160,3 +160,17 @@ body {
     width: 55rem;
   }
 }
+
+
+/*
+ * Custom styles (appending to what we have from Bootstrap in some cases)z
+ */
+
+.card-block {
+  color:black;
+  text-align: left;
+}
+
+.auth-links a {
+  color:black;
+}
