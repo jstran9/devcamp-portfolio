@@ -1,6 +1,7 @@
 module ApplicationHelper
   def login_helper
-    if current_user.is_a?(User)
+    # when logged in you are only a User. you are not a User if logged out, but a GuestUser.
+    if !current_user.is_a?(GuestUser)
       link_to "logout", destroy_user_session_path, method: :delete
     else
       (link_to "Register", new_user_registration_path) +
