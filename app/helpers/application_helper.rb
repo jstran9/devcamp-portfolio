@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def login_helper style
+  def login_helper style = '' # by default just dont have a class for the style.
     # when logged in you are only a User. you are not a User if logged out, but a GuestUser.
     if !current_user.is_a?(GuestUser)
       link_to "logout", destroy_user_session_path, method: :delete, class: style
