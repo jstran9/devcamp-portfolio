@@ -61,3 +61,19 @@ puts "9 portfolio items created"
     portfolio_id: Portfolio.last.id
   )
 end
+
+User.create!(
+    email: "test@example.com",
+    name: "Todd",
+    roles: "admin",
+    password: 123456
+)
+
+User.create!(
+  email: "test2@example.com",
+  name: "Jim A.",
+  roles: "user",
+  password: 123456
+)
+
+puts "2 users created"
