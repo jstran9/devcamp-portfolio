@@ -30,7 +30,7 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Your portfolio item is now live'}
       else
-        form.html { render :new }
+        format.html { render :new }
       end
     end
   end
@@ -71,7 +71,7 @@ class PortfoliosController < ApplicationController
                                       :body,
                                       :main_image,
                                       :thumb_image,
-                                      technologies_attributes: [:name, :id, :_destroy])
+                                      technologies_attributes: [:name, :id, :destroy])
 
   end
 end
