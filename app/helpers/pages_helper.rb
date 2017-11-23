@@ -24,9 +24,3 @@ module PagesHelper
 
   end
 end
-
-# "WhittginGina: RT @derkacz_mark: <a href='https://t.co/NdSAEqXHG'</a> @bpashubby @havasuunc @askthemaestro UFO The
-#       Writer #mechanix it #RAILS"
-
-
-# tweet.gsub(regex) { |url| "<a href='#{url}' target='_blank'>#{url}</a>" }
