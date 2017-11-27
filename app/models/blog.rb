@@ -16,4 +16,12 @@ class Blog < ApplicationRecord
   def self.featured_blogs
     limit(2)
   end
+
+  def self.get_most_recent_blogs showAllBlogs, params
+    if showAllBlogs
+      order("created_at DESC").page(params[:page]).per(5)
+    else
+      where("status = 1").order("created_at DESC").page(params[:page]).per(5)
+    end
+  end
 end
