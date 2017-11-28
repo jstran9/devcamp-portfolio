@@ -14,8 +14,13 @@
   </div>
 
   <div class="form-group">
+      <%= form.select :topic_id, options_from_collection_for_select(@topics, "id", "title"), {}, {class: 'form-control'}%>
+  </div>
+
+  <div class="form-group">
     <%= form.submit "Submit", class: 'btn btn-primary' %>
   </div>
+
 <% end %>
 
 
