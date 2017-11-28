@@ -17,6 +17,7 @@ module BlogsHelper
         no_intra_emphasis: true,
         autolink: true,
         lax_html_blocks: true,
+        strikethrough: true,
     }
 
     markdown_to_html = Redcarpet::Markdown.new(coderayified, options)
