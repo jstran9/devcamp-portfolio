@@ -4,6 +4,15 @@
 /*
  * Globals
  */
+@font-face {
+  font-family: 'Lato';
+  src: font-path('Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: font-path('RobotoSlab-Regular.ttf');
+}
 
 /* Links */
 a,
@@ -31,11 +40,21 @@ html,
 body {
   padding-top: 3rem;
   height: 100%;
+  font-family: 'Lato';
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab';
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
