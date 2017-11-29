@@ -6,7 +6,7 @@
 
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "yoshi.jpeg", width: 300, alt: "Profile Image", class: 'profile-img'%>
+        <%= image_tag "yoshi.jpeg", width: '100%', alt: "Profile Image", class: 'profile-img'%>
       </div>
 
       <div class="col-md-8">
@@ -19,8 +19,68 @@
         </p>
 
         <p>As I attempt to further gain my software development skills, I am also exposing myself to using testing frameworks
-          such as: JUnit (with Java), Unittest (Python/Django), Capybara (Ruby), Poltergeist (Ruby), and RSpec (Ruby).
+          such as: JUnit (with Java), Capybara (Ruby), Poltergeist (Ruby), and RSpec (Ruby).
         </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#experience"
+            aria-expanded="false"
+            aria-controls="experience"
+          >
+            Experience
+          </button>
+
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controls="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="experience">
+            <div class="card card-block">
+              <p> Software Engineer Intern (March 2015 - July 2015) at Synactive, Inc.</p>
+              <ul>
+                <li>Improved an existing Bluetooth (BT) Printing feature to work on all brands of BT printers on iOS
+                  (used Objective-C).
+                    <ul>
+                      <li>Wrote non-technical documentation on how to use this BT feature for customers.</li>
+                    </ul>
+                </li>
+                <li>
+                  Fixed customer bugs
+                    <ul>
+                      <li>Fixed a bug on a Windows Application where a UI component was not loading and displaying a
+                        column of information (used C++)</li>
+                      <li>Fixed a bug on an iOS Application where a navigation bar component was missing on a specific
+                        theme while being present in other themes. (used Objective-C)</li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              <p>Master's Degree (M.S) in Computer Science from Cal State East Bay (December 2014). </p>
+            </div>
+            <div class="card card-block">
+              <p>Bachelor's Degree (B.S) in Biological Sciences from UC Davis.</p>
+            </div>
+          </div>
+        </p>
+
       </div>
     </div>
   </div>
