@@ -51,6 +51,7 @@ body {
   vertical-align: top;
 }
 .cover-container {
+  margin-top: 10%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -232,9 +233,6 @@ body {
   text-align: left;
 }
 
-.app-card-container > .card {
-  padding: 40px;
-}
 
 .profile-img {
   border: 1px solid grey;
@@ -247,4 +245,9 @@ body {
 .skill {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.app-card-container > .card {
+  padding-left: 5%;
+  padding-right: 5%;
 }
