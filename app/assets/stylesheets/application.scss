@@ -29,6 +29,7 @@ a:hover {
 
 html,
 body {
+  padding-top: 3rem;
   height: 100%;
 }
 body {
@@ -164,7 +165,7 @@ body {
 
 
 /*
- * Custom styles (appending to what we have from Bootstrap in some cases)z
+ * Custom styles (appending to what we have from Bootstrap in some cases)
  */
 
 .card-block {
@@ -211,7 +212,12 @@ body {
 }
 
 .app-footer {
-  color: white;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #4668A5;
 }
 
 .tech-news {
@@ -250,4 +256,13 @@ body {
 .app-card-container > .card {
   padding-left: 5%;
   padding-right: 5%;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.app-footer-text {
+  color: black;
 }
