@@ -8,41 +8,34 @@
 
     <meta name="keywords" content="<%=@seo_keywords%>" />
 
+    <%= favicon_link_tag 'favicons/mario_1.ico' %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <div class="site-wrapper">
 
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-        <%= video_tag(
-          'HardDrivePhotojpeg.mp4',
-          id: 'background',
-          autoplay: true,
-          loop: true,
-          muted: true,
-          poster: 'background_sample.jpeg'
+    <%= video_tag(
+            'HardDrivePhotojpeg.mp4',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'background_sample.jpeg'
         )
-        %>
+    %>
 
-        <%= render "shared/application_nav" %>
+    <%= render "shared/application_nav" %>
 
-        <%= yield %>
-
-        <%= render "shared/application_footer" %>
-
-        <%= alerts %>
-
-        <%= source_helper("application") %>
-
-        </div>
-
+    <div class="container">
+      <div class="starter-template">
+       <%= yield %>
       </div>
 
-    </div>
+      <%= render "shared/application_footer" %>
+    </div><!-- /.container -->
+
+    <%= alerts %>
   </body>
 </html>

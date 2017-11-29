@@ -4,6 +4,15 @@
 /*
  * Globals
  */
+@font-face {
+  font-family: 'Lato';
+  src: font-path('Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: font-path('RobotoSlab-Regular.ttf');
+}
 
 /* Links */
 a,
@@ -29,12 +38,23 @@ a:hover {
 
 html,
 body {
+  padding-top: 3rem;
   height: 100%;
+  font-family: 'Lato';
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab';
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -51,6 +71,7 @@ body {
   vertical-align: top;
 }
 .cover-container {
+  margin-top: 10%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -163,13 +184,15 @@ body {
 
 
 /*
- * Custom styles (appending to what we have from Bootstrap in some cases)z
+ * Custom styles (appending to what we have from Bootstrap in some cases)
  */
 
 .card-block {
   color:black;
   text-align: left;
   padding: 1%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .auth-links a {
@@ -208,7 +231,12 @@ body {
 }
 
 .app-footer {
-  color: white;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  border-style: none;
 }
 
 .tech-news {
@@ -223,4 +251,37 @@ body {
 
 .tech-news > .card {
   padding: 30px;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+}
+
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.app-card-container > .card {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.app-footer-text {
+  color: black;
 }

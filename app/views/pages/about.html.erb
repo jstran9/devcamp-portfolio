@@ -1,20 +1,109 @@
-<h1>About Me</h1>
-<hr/>
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "yoshi.jpeg", width: 300, alt: "Profile Image"%>
-  </div>
-  <div class="col-md-8">
-    <p>I am currently expanding my knowledge of many programming languages by learning Full-Stack Web Development. I have
-      built my own smaller scale websites using other programming languages and technologies such as Java, Spring, Python,
-      and Django. Currently I am learning Ruby and Ruby on Rails (RoR) 5 (this website is built using Ruby and RoR 5). I
-      am open to learning any programming languages as I have prior internship experience where I developed using C++
-      (back-end development) and Objective-C (mobile development). I am taking a variety of online courses to further my
-      exposure to different programming languages and to gain more software development skills.
-    </p>
-    <p>As I attempt to further gain my software development skills, I am also exposing myself to using testing frameworks
-      such as: JUnit (with Java), Unittest (Python/Django), Capybara (Ruby), Poltergeist (Ruby), and RSpec (Ruby).
-    </p>
+<div class="app-card-container">
+  <div class="card">
+    <h1>About Me</h1>
+
+    <hr/>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "yoshi.jpeg", width: '100%', alt: "Profile Image", class: 'profile-img'%>
+
+        <div class ="skills">
+          <% @skills.each do |skill| %>
+              <div class="skill">
+                <h4><%= skill.title%></h4>
+                <div class="progress">
+                  <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%=skill.percent_utilized%>"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  style="width:<%=skill.percent_utilized%>%"
+                  >
+                  </div>
+                </div>
+              </div>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <p>I am currently expanding my knowledge of many programming languages by learning Full-Stack Web Development. I have
+          built my own smaller scale websites using other programming languages and technologies such as Java, Spring, Python,
+          and Django. Currently I am learning Ruby and Ruby on Rails (RoR) 5 (this website is built using Ruby and RoR 5). I
+          am open to learning any programming languages as I have prior internship experience where I developed using C++
+          (back-end development) and Objective-C (mobile development). I am taking a variety of online courses to further my
+          exposure to different programming languages and to gain more software development skills.
+        </p>
+
+        <p>As I attempt to further gain my software development skills, I am also exposing myself to using testing frameworks
+          such as: JUnit (with Java), Capybara (Ruby), Poltergeist (Ruby), and RSpec (Ruby).
+        </p>
+
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#experience"
+            aria-expanded="false"
+            aria-controls="experience"
+          >
+            Experience
+          </button>
+
+          <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controls="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="experience">
+            <div class="card card-block">
+              <p> Software Engineer Intern (March 2015 - July 2015) at Synactive, Inc.</p>
+              <ul>
+                <li>Improved an existing Bluetooth (BT) Printing feature to work on all brands of BT printers on iOS
+                  (used Objective-C).
+                    <ul>
+                      <li>Wrote non-technical documentation on how to use this BT feature for customers.</li>
+                    </ul>
+                </li>
+                <li>
+                  Fixed customer bugs
+                    <ul>
+                      <li>Fixed a bug on a Windows Application where a UI component was not loading and displaying a
+                        column of information (used C++)</li>
+                      <li>Fixed a bug on an iOS Application where a navigation bar component was missing on a specific
+                        theme while being present in other themes. (used Objective-C)</li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              <p>Master's Degree (M.S) in Computer Science from Cal State East Bay (December 2014). </p>
+            </div>
+            <div class="card card-block">
+              <p>Bachelor's Degree (B.S) in Biological Sciences from UC Davis.</p>
+            </div>
+          </div>
+        </p>
+
+      </div>
+    </div>
   </div>
 </div>
+
+
 

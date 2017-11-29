@@ -64,16 +64,16 @@ end
 
 User.create!(
     email: "test@example.com",
-    name: "Todd",
+    name: "Admin User",
     roles: "admin",
     password: 123456
 )
 
 User.create!(
   email: "test2@example.com",
-  name: "Jim A.",
+  name: "Regular User",
   roles: "user",
   password: 123456
 )
 
-puts "2 users created"
+puts "Admin user and regular user created"
