@@ -32,5 +32,7 @@ module DevcampPortfolio
     # override defaults. no longer need to require white listed parameters.
     # config.action_controller.permit_all_parameters = true
     config.eager_load_paths << "#{Rails.root}/lib"
+
+    config.secret_key_base = ENV["SECRET_KEY_BASE"]
   end
 end
