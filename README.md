@@ -9,7 +9,11 @@
         - This section allows an Admin user to drag and drop (move the Portfolio images around) with the help of
         JavaScript technologies (CoffeeScript and jQuery).
     - There is also a section which is more focused about contacting me, and some background information on myself.
-
+    
+## TODO
+    - Add in testing
+    
+        
 ## Overview
 - Creating this repository to follow along the contents of Jordan Hudgen's course, Professional-rails-5-development-course
 on Udemy.
@@ -17,7 +21,7 @@ on Udemy.
 
 - Ruby version
     - I am using ruby 2.3.1 for this.
-    
+     
 * System dependencies
     - I developed this app on Ubuntu 16.04 LTS, if you clone this project you should be able to develop on Windows or
     Mac as well.
@@ -105,13 +109,15 @@ on Udemy.
             - Now you will want to change the the file, production.rb located in "config/environments".
                 - Go to the bottom of that file and whitelist your Heroku app.
                 - Also change the URL to the url of your Heroku app without the http portion.
-
+                
+                
 ### Features
 
 - Real time chat engine for comments (Help of Action Cable)
 - Blog (Rails and ActiveModel)
 - Portfolio (Rails and ActiveModel)
 - Drag and drop interface (Written using mostly CoffeeScript and jQuery)
+
 
 ### Contact
 - With any questions, feel free to contact me via email which can be found below:
